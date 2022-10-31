@@ -1,0 +1,16 @@
+$primary-color: #224582;
+$secondary-color: #2b2b2b;
+$primary-color: blue;
+$secondary-color: black;
+$light-color: #fff;
+
+/*varables in sass can be decleared by a dollar sign*/
+$font-weights: (
+  "small": 200,
+  "regular": 400,
+  "medium": 500,
+  "large": 700,
+  "bold": 900,
+);
+
+$mobile: 700px;

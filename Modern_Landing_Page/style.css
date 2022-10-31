@@ -1,0 +1,389 @@
+:root{
+      --primary-color: #e50914;
+}
+
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body{
+      background-color: rgba(59, 57, 57, 0.925);
+      font-family: Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      color: #999;
+      background-color: #000; 
+}
+
+ul{
+      list-style: none;
+}
+
+h1, h2, h3, h4{
+      color: #fff;
+}
+
+a{
+      color: #fff;
+      text-decoration: none;
+}
+
+
+.showcase{
+      width: 100%;
+      height: 100vh;
+      position: relative;
+      background: url('../foto/a8.jpg')  center;
+}
+
+.showcase::before{
+      content: '';
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background: rgba(0, 0, 0, 0.725);
+      z-index: 1;
+      box-shadow: inset 150px 100px 150px #000,  inset -150px -100px 100px #999;
+}
+
+.showcase-top{
+      position: relative; 
+      height: 90px;
+      z-index: 2;
+}
+
+.showcase-top .img{
+      width: 170px;
+      height: 40px;
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      font-size: 3rem;
+      color: var(--primary-color);
+      font-style: italic;
+}
+
+.showcase-content{
+      position: relative;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      line-height: 3rem;
+      margin-top: 9rem;
+      z-index: 2;
+}
+
+.showcase-content h1{
+      text-transform: capitalize;
+      font-size: 5.2rem;
+      font-weight: 700;
+      margin: 0  0 2rem;
+}
+.showcase-content p{
+      text-transform: uppercase;
+      color: #fff ;
+      font-weight: 400;
+      font-size: 1.9rem;
+      line-height: 1.25;
+}
+
+.btn{
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: #fff;
+      text-align: center;
+      padding: 0.4rem 1.3rem;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-right: 0.5rem;
+      outline: none;
+}
+
+.btn:hover{
+      opacity: 0.9;
+}
+
+.btn-1{
+      margin-top: 5px;
+      margin-left: 89%;
+}
+.btn-2{
+      font-size: 2rem;
+      padding: 0.8rem 1.31rem;
+      text-transform: uppercase;
+      margin-top: 3rem;
+}
+
+.tabs{
+      background: #000;
+      padding-top: -4rem;
+      height: 15vh;
+      background: rgb(22, 22, 22);
+}
+
+.tabs .container{
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 3rem;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      overflow: hidden;
+}
+
+
+.tab-text{
+      font-weight: 2rem;
+      color: #fff;
+}
+
+.tab-border{
+      border-bottom: var(--primary-color) 3px solid;
+}
+
+#tab-1-conten{
+      height: 50vh;
+}
+
+.tab-1-content-1 p{
+      font-weight: 600;
+      font-size:  1.4rem;
+      color: #fff;
+      padding-bottom: 2rem;
+}
+
+#tab-1-conten,
+#tab-2-conten,
+#tab-3-conten{
+      display: none;
+}
+
+.show{
+      display: block !important;
+}
+
+.tab-1-content-1 a{
+      background: var(--primary-color);
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border-radius: 6px;
+      font-size: 2.3rem;
+      color: #fff;
+      align-self: center;
+}
+
+.tab-content{
+      padding-top: 10rem;
+}
+
+#tab-content-1{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 3rem;
+      align-items: center;
+      justify-content: center;
+}
+
+
+.tab-2-content-1{
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-gap: 3rem;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2rem;
+}
+
+.tab-2-content-1 p{
+      font-weight: 600;
+      font-size:  1.4rem;
+      color: #fff;
+      padding-bottom: 2rem;
+}
+
+
+
+.tab-2-content-1 a{
+      background: var(--primary-color);
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border-radius: 6px;
+      font-size: 2rem;
+      color: #fff;
+      align-self: start;
+}
+.tab-3-content-1 p{
+      font-weight: 600;
+      font-size:  1.4rem;
+      color: #fff;
+      padding-bottom: 2rem;
+}
+
+.tab-item{
+      padding-bottom: 1rem;
+}
+
+
+.tab-3-content-1 a{
+      background: var(--primary-color);
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border-radius: 6px;
+      font-size: 2rem;
+      color: #fff;
+      align-self: start;
+}
+
+.tab-2-content-2{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 3rem;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+}
+ .text-2{
+       font-size: 1.2rem;
+       font-weight: 600;
+       text-transform: capitalize;
+ }
+
+ .tab-3-content-1{
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-gap: 3rem;
+      align-items: center;
+      justify-content: center;
+      padding-top: 2rem;
+ }
+.table{
+      width: 100%;
+      margin-top: 2rem;
+      border-spacing: 0;
+      border-collapse: collapse;
+}
+
+.table thead th{
+      text-transform: uppercase;
+      padding-left: 0rem;
+}
+
+.table tbody tr td{
+      padding-left: 0rem;
+      padding-top: 0.8rem;
+      text-align: center;
+}
+
+.table tbody tr td:first-child{
+      text-align: left;
+}
+.table tbody tr:nth-child(odd){
+      background: #222;
+}
+
+.footer{
+      max-width: 85%;
+      margin: auto;
+      padding-top: 4rem;
+}
+.footer,
+.footer a{
+      color: #999;
+      font-size: 0.9rem;
+}
+
+.footer p{
+      margin-bottom: 1.5rem;
+}
+
+.footer .footer-cols{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-gap: 2rem;
+}
+
+
+/*@media (max-width: 960px){
+      .showcase{
+            height: 70vh;
+      }
+
+}
+*/
+@media ( max-width:700px){
+      .btn-1{
+            margin-left: 80%;
+      }
+      .showcase-content h1{
+            font-size: 4.2rem;
+            font-weight: 300;
+      }
+      .tabs .container{
+            display: block;
+            width: 100%;
+            padding-bottom: 2rem;
+      }
+      .tab-text{
+            font-weight: 100;
+            color: #fff;
+            font-size: 0.8rem;
+      }
+
+      .showcase-content p{
+            font-size: 1.5rem;
+            line-height: 1.25;
+            padding-top: 2rem;
+      }
+      .btn-2{
+            font-size: 1.5rem;
+      }
+     
+      .tab-1-content-1 p{
+            font-weight: 100;
+            color: #fff;
+            font-size: 1rem;
+      }
+            .tab-1-content-1 a{
+            border-radius: 6px;
+            font-size: 1rem;
+      }
+    
+      .flex{
+            width: 250px;
+            margin-right: 8rem;
+      }
+      .tab-2-content-1 p{
+            font-weight: 200;
+            font-size:  1rem;
+            padding-bottom: 0;
+      }
+      
+      .tab-2-content-1 a{
+            border-radius: 6px;
+            font-size: 1.3rem;
+            color: #fff;
+            align-self: start;
+      }
+      #tab-1-conten{
+            grid-template-columns: 1fr;
+      }
+      .tab-2-content-2{
+            grid-template-columns: 1fr;
+            padding-top: 1rem
+      }
+      .tab-2-content-1{
+            grid-template-columns: 1fr;
+      }
+}

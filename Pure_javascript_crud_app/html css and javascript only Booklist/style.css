@@ -1,0 +1,9 @@
+input.btn{
+  width: 100%;
+}
+.search{
+  font-size: 1.5rem;
+  color: blue;
+  font-weight: 700;
+  text-transform: capitalize;
+}
